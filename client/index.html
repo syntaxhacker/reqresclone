@@ -1,0 +1,140 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>noob api</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<table>
+				<tr>
+					<th>Http Method</th>
+					<th>Endpoint</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>GET</td>
+					<td><a class="api api-1" href="/api/users">/users</a></td>
+					<td>All Users</td>
+				</tr>
+				<tr>
+					<td>GET</td>
+					<td>
+						<a
+							class="api api-2"
+							href="/api/users/419ac304-6d30-40de-9b84-23592b47c2f5"
+							>/api/users/419ac304-6d30-40de-9b84-23592b47c2f5</a
+						>
+					</td>
+					<td>Single User</td>
+				</tr>
+				<tr>
+					<td>GET</td>
+					<td>
+						<a class="api api-3" href="/api/users/4040"
+							>/api/users/4040</a
+						>
+					</td>
+					<td>Single user not found</td>
+				</tr>
+				<tr>
+					<td>POST</td>
+					<td>
+						<a class="api api-4" href="/api/users/">/api/users/</a>
+					</td>
+					<td>Create New user</td>
+				</tr>
+				<tr>
+					<td>PUT</td>
+					<td>
+						<a
+							class="api api-5"
+							href="/api/users/419ac304-6d30-40de-9b84-23592b47c2f5"
+							>/api/users/419ac304-6d30-40de-9b84-23592b47c2f5</a
+						>
+					</td>
+					<td>Update User</td>
+				</tr>
+				<tr>
+					<td>PATCH</td>
+					<td>
+						<a
+							class="api api-6"
+							href="/api/users/419ac304-6d30-40de-9b84-23592b47c2f5"
+							>/api/users/419ac304-6d30-40de-9b84-23592b47c2f5</a
+						>
+					</td>
+					<td>Modify User</td>
+				</tr>
+				<tr>
+					<td>DELETE</td>
+					<td>
+						<a
+							class="api api-7"
+							href="/api/users/419ac304-6d30-40de-9b84-23592b47c2f5"
+							>/api/users/419ac304-6d30-40de-9b84-23592b47c2f5</a
+						>
+					</td>
+					<td>Delete User</td>
+				</tr>
+				<tr>
+					<td>POST</td>
+					<td>
+						<a class="api api-8" href="/api/register"
+							>/api/register</a
+						>
+					</td>
+					<td>REGISTER SUCCESSFUL</td>
+				</tr>
+				<tr>
+					<td>POST</td>
+					<td>
+						<a class="api api-9" href="/api/register"
+							>/api/register</a
+						>
+					</td>
+					<td>REGISTER UNSUCCESSFUL</td>
+				</tr>
+				<tr>
+					<td>POST</td>
+					<td>
+						<a class="api api-10" href="/api/login">/api/login</a>
+					</td>
+					<td>LOGIN SUCCESSFUL</td>
+				</tr>
+				<tr>
+					<td>POST</td>
+					<td>
+						<a class="api api-11" href="/api/login">/api/login</a>
+					</td>
+					<td>LOGIN UNSUCCESSFUL</td>
+				</tr>
+				<tr>
+					<td>GET</td>
+					<td>
+						<a class="api api-12" href="/api/users?delay=5"
+							>/api/users?delay=5</a
+						>
+					</td>
+					<td>DELAYED RESPONSE</td>
+				</tr>
+			</table>
+			<section>
+				<div id="req">
+					<h3>Request</h3>
+					<!-- <a href="" id="reqUrl">/api/users</a> -->
+					<p id="reqUrl"></p>
+				</div>
+				<label for="">Request Body</label>
+				<textarea name="" id="reqBody" cols="30" rows="10"> </textarea>
+				<div id="res">
+					<h3>Response</h3>
+					<h4 id="resCode"></h4>
+				</div>
+			</section>
+			<textarea name="" id="myTextarea" cols="30" rows="10"></textarea>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
